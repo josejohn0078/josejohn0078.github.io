@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOSE JOHN | Photography</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #111;
+            color: #fff;
+        }
+
+        header {
+            height: 100vh;
+            background: url('https://source.unsplash.com/1600x900/?photography') no-repeat center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px;
+            background: rgba(0,0,0,0.7);
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .about, .contact {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+        }
+
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #fff;
+            color: #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header id="home">
+    <h1>JOSE JOHN</h1>
+    <p>Professional Photographer</p>
+</header>
+
+<section id="gallery">
+    <h2 style="text-align:center; margin-bottom:20px;">Gallery</h2>
+    <div class="gallery">
+        <img src="C:\Users\josej\Downloads\pics\brooke-balentine-yixZx5uXVBM-unsplash.jpg">
+        <img src="C:\Users\josej\Downloads\pics\severin-demchuk-jllQYsBvFnA-unsplash.jpg">
+        <img src="C:\Users\josej\Downloads\pics\land-o-lakes-inc-qXe3Pw5sZvE-unsplash.jpg">
+        <img src="C:\Users\josej\Downloads\pics\land-o-lakes-inc-p6wuN_3Wwqs-unsplash.jpg">
+        <img src="C:\Users\josej\Downloads\pics\leo_visions-ynXMCbF_o_w-unsplash.jpg">
+        <img src="C:\Users\josej\Downloads\pics\land-o-lakes-inc-1w3tO5F8HYY-unsplash.jpg">
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p style="margin-top:15px;">
+        I'm a passionate photographer capturing moments, emotions, and stories.
+        Specializing in portraits, landscapes, and events.
+    </p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form>
+        <input type="text" placeholder="JOSE JOHN"><br>
+        <input type="email" placeholder="josejohnhud@gmail.com"><br>
+        <textarea rows="5" placeholder="Your Message"></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© JOSE JOHN | Photography</p>
+</footer>
+
+</body>
+</html>
